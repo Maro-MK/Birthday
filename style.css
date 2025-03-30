@@ -1,26 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif, "Comic Sans MS";
-    background-color: white;
-    color: black;
+    background-color: brown;
     text-align: center;
+    color: black;
 }
 
 form {
     display: inline-block;
     border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px gray;
+    margin-block: 50px;
+    margin-inline: auto;
+    max-inline-size: 400px;
+    transition: transform 0.7s ease ,background-color 0.7s ease;
+}
+
+form:hover {
+    background-color: khaki;
+    transform: scale(1.05);
 }
 
 h4,
-h1 {
+h1,
+p,
+h2,
+h3 {
     display: inline-block;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
     transition: 0.7s ease;
+    color: white;
+    background-color: midnightblue;
+    border-radius: 8px;
 }
 
 h1 {
@@ -28,51 +50,59 @@ h1 {
 }
 
 h4:hover,
-h1:hover {
+h1:hover,
+p:hover,
+h2:hover,
+h3:hover {
     border: 2px solid black;
     border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
+    padding: 25px;
+    margin: 25px;
+    background-color: orangered;
 }
 
 label {
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
 }
 
 input {
     text-align: center;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 2px solid black;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
     transition: 0.7s ease;
     background-color: white;
     color: black;
 }
 
 input:hover {
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
+    background-color: khaki;
 }
 
 button {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
+    background-color: midnightblue;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
     transition: 0.7s ease;
 }
 
 button:hover {
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
+    background-color: orangered;
 }
 
 section {
     display: none;
+    max-inline-size: 400px;
+    margin-block: 50px;
+    margin-inline: auto;
 }
 
 audio {
