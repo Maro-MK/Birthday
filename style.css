@@ -108,3 +108,7 @@ section {
 audio {
     display: none;
 }
+
+.dev {
+    font: bold italic; 
+}
