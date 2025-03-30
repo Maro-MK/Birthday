@@ -110,5 +110,6 @@ audio {
 }
 
 .dev {
-    font: bold italic; 
+    font-weight: bold;
+    font-style: bold;
 }
